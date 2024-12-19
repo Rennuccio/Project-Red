@@ -1,0 +1,179 @@
+:root {
+    --nova: "Nova Square", sans-serif;
+    --raj: "Rajdhani", sans-serif;
+    --dared: darkred;
+    --col1: #C67F7F;
+    --col2: #ececec;
+}
+
+* {
+    font-family: var(--nova);
+}
+
+main {
+    background-color: var(--col2);
+}
+
+.logo {
+    max-width: 160px;
+    max-height: 90px;
+}
+
+.logone {
+    font-size: 75px;
+    color: var(--dared);
+    font-weight: 500;
+}
+
+.bgbianco {
+    background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+.background {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      ),
+      url(./media/switzerland-862870_1920.jpg);
+    height: 1080px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.background::before {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    background-image: url(./media/mountains2.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+}
+
+.titolone {
+    color: var(--dared);
+}
+
+
+.virgolette::before {
+    content: '"';
+    color: var(--dared);
+    transform: scale(2, 2);
+    font-size: 200%;
+}
+
+.virgolette::after {
+    content: '"';
+    color: var(--dared);
+    transform: scale(2, 2);
+    font-size: 200%;
+}
+
+.dared {
+    color: var(--dared);
+}
+
+.col2 {
+    color: var(--col2);
+}
+
+.bi {
+    font-weight: 900;
+    font-size: 70px;
+}
+
+.linea {
+    height: 4px;
+    width: 70%;
+    background-color: var(--dared);
+    border-radius: 10px;
+    opacity: 1;
+    position: relative;
+  }
+  
+.linea::before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--col2);
+    border: 2px solid var(--dared);
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+  }
+
+.sfondo-bottone {
+    background-image: url(./media/trees2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--col2);
+    height: 55vh;
+}
+
+.bottone {
+    background-color: var(--dared);
+    font-family: var(--raj);
+    font-weight: 600;
+    padding: 10px 40px;
+}
+
+.titolo-timeline {
+    font-size: 40px;
+}
+
+.timeline {
+    height: 60vh;
+    padding-left: 70px;
+  }
+  
+.timeline-list {
+    border-left: 4px solid var(--dared);
+    position: relative;
+    margin: 0px;
+  }
+  
+.timeline-list::before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--col2);
+    border: 2px solid var(--dared);
+    position: absolute;
+    top: calc(8% - 12px);
+    right: calc(100.6% - 12px);
+}
+
+.li-timeline {
+    font-family: var(--raj);
+}
+
+.sfondo-timeline {
+    background-image: url(./media/single.png);
+    background-position-x: right 300px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    background-size: 36%;
+    min-height: fit-content;
+}
+
+.fototonda {
+    border: 4px solid var(--dared);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--dared);
+    color: var(--col2);
+}
